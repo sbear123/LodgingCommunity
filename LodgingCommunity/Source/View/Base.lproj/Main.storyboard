@@ -10,13 +10,13 @@
         <!--즐겨찾기-->
         <scene sceneID="R37-YO-c3P">
             <objects>
-                <tableViewController id="kfm-68-HTr" sceneMemberID="viewController">
+                <tableViewController id="kfm-68-HTr" customClass="FavoriteViewController" customModule="LodgingCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3C1-Bf-SdY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="ylE-pM-MgC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="ylE-pM-MgC" customClass="FavoriteCell" customModule="LodgingCommunity" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ylE-pM-MgC" id="Whv-Yz-C0m">
@@ -45,7 +45,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-d8-ALn">
-                                            <rect key="frame" x="378" y="15" width="21" height="22"/>
+                                            <rect key="frame" x="373" y="15" width="21" height="22"/>
                                             <color key="tintColor" systemColor="systemPinkColor"/>
                                             <state key="normal" image="heart.fill" catalog="system"/>
                                         </button>
@@ -64,7 +64,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="MlA-Ai-4Fm" firstAttribute="leading" secondItem="Whv-Yz-C0m" secondAttribute="leading" constant="20" id="0aE-Mp-7qu"/>
-                                        <constraint firstAttribute="trailing" secondItem="d3G-d8-ALn" secondAttribute="trailing" constant="15" id="9Ky-tF-rJV"/>
+                                        <constraint firstAttribute="trailing" secondItem="d3G-d8-ALn" secondAttribute="trailing" constant="20" id="9Ky-tF-rJV"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fnf-K8-wgk" secondAttribute="trailing" constant="10" id="9fw-x8-eb3"/>
                                         <constraint firstItem="MlA-Ai-4Fm" firstAttribute="top" secondItem="Whv-Yz-C0m" secondAttribute="top" constant="15" id="Gwj-WS-HFC"/>
                                         <constraint firstItem="psJ-dQ-stk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MlA-Ai-4Fm" secondAttribute="trailing" constant="10" id="LRw-y1-Szc"/>
@@ -81,6 +81,14 @@
                                         <constraint firstItem="fnf-K8-wgk" firstAttribute="leading" secondItem="arA-4K-MZJ" secondAttribute="trailing" constant="8" symbolic="YES" id="w83-xM-UhG"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="favorite" destination="d3G-d8-ALn" id="1r0-ZY-Ss0"/>
+                                    <outlet property="name" destination="mea-4M-fOz" id="WTN-6e-6iE"/>
+                                    <outlet property="rateLabel" destination="fnf-K8-wgk" id="5cA-np-KlF"/>
+                                    <outlet property="rateView" destination="arA-4K-MZJ" id="FF9-Ua-ESu"/>
+                                    <outlet property="selectTime" destination="psJ-dQ-stk" id="F6s-AN-Zzo"/>
+                                    <outlet property="thumbnail" destination="MlA-Ai-4Fm" id="RXi-1g-x7l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -97,13 +105,13 @@
         <!--홈-->
         <scene sceneID="ldE-F0-USK">
             <objects>
-                <tableViewController id="tkH-0l-EoL" sceneMemberID="viewController">
+                <tableViewController id="tkH-0l-EoL" customClass="MainViewController" customModule="LodgingCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pww-pr-hkE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="iwU-1M-HKQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="iwU-1M-HKQ" customClass="MainCell" customModule="LodgingCommunity" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iwU-1M-HKQ" id="iq7-24-NxI">
@@ -132,7 +140,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d9-oC-s3l">
-                                            <rect key="frame" x="378" y="15" width="21" height="22"/>
+                                            <rect key="frame" x="373" y="15" width="21" height="22"/>
                                             <color key="tintColor" systemColor="systemPinkColor"/>
                                             <state key="normal" image="heart" catalog="system"/>
                                         </button>
@@ -150,7 +158,7 @@
                                         <constraint firstItem="ckD-hh-Xtz" firstAttribute="leading" secondItem="9va-Oe-D4v" secondAttribute="trailing" constant="10" id="Ijx-KW-wQI"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ckD-hh-Xtz" secondAttribute="trailing" constant="-182" id="JDd-EZ-Cgg"/>
                                         <constraint firstItem="ckD-hh-Xtz" firstAttribute="top" secondItem="9d9-oC-s3l" secondAttribute="bottom" constant="5" id="JfC-Sk-Umb"/>
-                                        <constraint firstAttribute="trailing" secondItem="9d9-oC-s3l" secondAttribute="trailing" constant="15" id="MQd-Fj-Qc4"/>
+                                        <constraint firstAttribute="trailing" secondItem="9d9-oC-s3l" secondAttribute="trailing" constant="20" id="MQd-Fj-Qc4"/>
                                         <constraint firstItem="ZXX-dh-CxZ" firstAttribute="top" secondItem="ckD-hh-Xtz" secondAttribute="bottom" constant="20" id="NKa-NE-Nqs"/>
                                         <constraint firstItem="pOv-kr-xgp" firstAttribute="centerY" secondItem="ZXX-dh-CxZ" secondAttribute="centerY" id="iut-LB-As8"/>
                                         <constraint firstItem="9va-Oe-D4v" firstAttribute="leading" secondItem="iq7-24-NxI" secondAttribute="leading" constant="20" id="n7P-Bw-ufz"/>
@@ -159,6 +167,13 @@
                                         <constraint firstItem="9va-Oe-D4v" firstAttribute="top" secondItem="iq7-24-NxI" secondAttribute="top" constant="15" id="zCJ-t0-iac"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="favorite" destination="9d9-oC-s3l" id="44m-Oh-Lu5"/>
+                                    <outlet property="name" destination="ckD-hh-Xtz" id="wq8-AG-wdQ"/>
+                                    <outlet property="rateLabel" destination="pOv-kr-xgp" id="h2M-I4-dVx"/>
+                                    <outlet property="rateView" destination="ZXX-dh-CxZ" id="Ygn-Nu-6kO"/>
+                                    <outlet property="thumbnail" destination="9va-Oe-D4v" id="S0n-hu-d0v"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
