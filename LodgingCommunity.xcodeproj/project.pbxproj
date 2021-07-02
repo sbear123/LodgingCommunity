@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -91,6 +91,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4379FA5E268E8A6E008FCA90 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				43E9C995268DBEF000B71475 /* LaunchScreen.storyboard */,
+				43E9C993268DBEF000B71475 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4379FA5F268E8A87008FCA90 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4379FA61268E9195008FCA90 /* Coordinator */,
+				4379FA66268E9354008FCA90 /* Delegate */,
+				4379FA65268E9345008FCA90 /* Extension */,
+				4379FA62268E9320008FCA90 /* Model */,
+				4379FA67268E9370008FCA90 /* View */,
+				4379FA64268E933D008FCA90 /* ViewModel */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4379FA60268E8A89008FCA90 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				43E9C998268DBEF000B71475 /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		4379FA61268E9195008FCA90 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4379FA62268E9320008FCA90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4379FA63268E9331008FCA90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43E9C98E268DBEEF00B71475 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4379FA64268E933D008FCA90 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4379FA65268E9345008FCA90 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4379FA66268E9354008FCA90 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				43E9C98A268DBEEF00B71475 /* AppDelegate.swift */,
+				43E9C98C268DBEEF00B71475 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4379FA67268E9370008FCA90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43E9C990268DBEEF00B71475 /* Main.storyboard */,
+				4379FA63268E9331008FCA90 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		43E9C97E268DBEEF00B71475 = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +200,9 @@
 		43E9C989268DBEEF00B71475 /* LodgingCommunity */ = {
 			isa = PBXGroup;
 			children = (
-				43E9C98A268DBEEF00B71475 /* AppDelegate.swift */,
-				43E9C98C268DBEEF00B71475 /* SceneDelegate.swift */,
-				43E9C98E268DBEEF00B71475 /* ViewController.swift */,
-				43E9C990268DBEEF00B71475 /* Main.storyboard */,
-				43E9C993268DBEF000B71475 /* Assets.xcassets */,
-				43E9C995268DBEF000B71475 /* LaunchScreen.storyboard */,
-				43E9C998268DBEF000B71475 /* Info.plist */,
+				4379FA60268E8A89008FCA90 /* SupportFile */,
+				4379FA5F268E8A87008FCA90 /* Source */,
+				4379FA5E268E8A6E008FCA90 /* Resource */,
 			);
 			path = LodgingCommunity;
 			sourceTree = "<group>";
@@ -165,7 +245,6 @@
 				38806E7A218D83F89DAAF7D5 /* Pods-LodgingCommunityTests.debug.xcconfig */,
 				0F82E69854B489E33FD8201A /* Pods-LodgingCommunityTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -10,6 +10,7 @@ target 'LodgingCommunity' do
   pod 'SwiftyJSON'
   pod 'SwiftMessages'
   pod 'DropDown'
+  pod 'Cosmos', '~> 23.0'
 
   # Pods for LodgingCommunity
 
