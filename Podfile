@@ -4,13 +4,18 @@
 target 'LodgingCommunity' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+  # Rx
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
+
+  # NetWork
   pod 'Alamofire'
   pod 'SwiftyJSON'
+
+  # UI
   pod 'SwiftMessages'
   pod 'DropDown'
-  pod 'Cosmos', '~> 23.0'
 
   # Pods for LodgingCommunity
 
