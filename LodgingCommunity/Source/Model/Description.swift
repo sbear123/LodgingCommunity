@@ -22,4 +22,10 @@ struct Description: Codable {
         subject = (try? values.decode(String.self, forKey: .subject)) ?? ""
         price = (try? values.decode(Int.self, forKey: .price)) ?? 0
     }
+    
+    init() {
+        imagePath = ""
+        subject = ""
+        price = 0
+    }
 }

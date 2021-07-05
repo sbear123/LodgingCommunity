@@ -18,6 +18,11 @@ struct Data: Codable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         totalCount = (try? values.decode(Int.self, forKey: .totalCount)) ?? 0
-        product = (try? values.decode([Product].self, forKey: .totalCount)) ?? []
+        product = (try? values.decode([Product].self, forKey: .product)) ?? []
+    }
+    
+    init() {
+        totalCount = 0
+        product = []
     }
 }

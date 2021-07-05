@@ -13,7 +13,7 @@ struct Product: Codable {
     var thumbnail: String
     var description: Description
     var rate: Double
-    var favorite: Favorite
+    var favorite: Bool
     
     private enum CodingKeys: String, CodingKey {
         case id, name, thumbnail, description, rate
@@ -26,6 +26,15 @@ struct Product: Codable {
         thumbnail = (try? values.decode(String.self, forKey: .thumbnail)) ?? ""
         description = try values.decode(Description.self, forKey: .description)
         rate = (try? values.decode(Double.self, forKey: .rate)) ?? 0
-        favorite = Favorite()
+        favorite = (UserDefaults.standard.string(forKey: "\(id)") != nil)
+    }
+    
+    init() {
+        id = 0
+        name = ""
+        thumbnail = ""
+        description = Description()
+        rate = 0
+        favorite = false
     }
 }
