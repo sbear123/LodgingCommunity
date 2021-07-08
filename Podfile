@@ -8,7 +8,7 @@ target 'LodgingCommunity' do
   # Rx
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
-
+  
   # NetWork
   pod 'Alamofire'
   pod 'SwiftyJSON'
